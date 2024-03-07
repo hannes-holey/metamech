@@ -53,7 +53,7 @@ def _get_lammps_string(
     elif lattice is None and actuator is not None:
         lattice = actuator.lattice
     elif actuator is None and lattice is not None:
-        pass
+        lattice = lattice
     # prepare lists, avoid using sets!
     nodes = list(lattice.nodes)
     node_types: Optional[List[int]]
