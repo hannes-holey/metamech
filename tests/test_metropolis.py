@@ -445,7 +445,7 @@ def test_metropolis_history_lengths(square_metropolis: Metropolis):
 def test_metropolis_reproducibility():
     """make sure that simulations can be reconstructed"""
     result = subprocess.run(
-        ["python", "tests/test_metropolis/manual_reproducibility_test.py"],
+        ["python3", "tests/test_metropolis/manual_reproducibility_test.py"],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE
     )
